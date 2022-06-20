@@ -1,0 +1,63 @@
+:root {
+  --primary-grey-color: #d9d9d9;
+  --primary-white-color: #ffff;
+  --primary-blue-color: #a6e1ea;
+  --secondary-blue-color: #0d6e79;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  margin: 0 auto;
+}
+
+.quote-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  border-radius: 32px;
+  width: 80%;
+  box-shadow: 0px 4px 20px var(--primary-grey-color);
+  background-color: var(--primary-blue-color);
+}
+.quote-text {
+  text-align: center;
+  width: 85%;
+  padding: 20px;
+}
+
+#quote {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-white-color);
+  font-size: 64px;
+}
+#quote-author {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-white-color);
+  margin-top: 50px;
+  font-size: 20px;
+}
+.quote-change-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-radius: 32px;
+  width: 80%;
+  box-shadow: 0px 4px 20px var(--primary-grey-color);
+}
+
+#new-quote-btn {
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--secondary-blue-color);
+  color: var(--primary-white-color);
+  font-size: 20px;
+}
