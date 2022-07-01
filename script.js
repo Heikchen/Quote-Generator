@@ -1,6 +1,7 @@
 let Quote = [];
 let randomSite;
 let Author = [];
+
 function getApi() {
   let min = 1;
   let max = 7268;
@@ -11,7 +12,6 @@ function getApi() {
       data.pagination.currentPage = 4;
       Quote = data.data;
       Author = data.data;
-      console.log(Quote);
       CreateRandomQuote();
     });
 }
