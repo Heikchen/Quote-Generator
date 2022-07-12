@@ -146,19 +146,19 @@ h2 {
 }
 .style-1 {
   background-image: url(assets/bold.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .style-2 {
   background-image: url(assets/italic.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .style-3 {
   background-image: url(assets/underline.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
