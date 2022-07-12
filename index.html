@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <div class="quote-container">
         <div class="quote-box">
             <div class="quote-text">
@@ -22,8 +23,15 @@
             </div>
         </div>
         <div class="quote-change-box">
+            <div>
+            <button onclick="personalizeQuote()" class="personalize-btn">...</button>
+            </div>
+            <div>
             <button onclick ="getApi()"id="new-quote-btn">new quote</button>
+            </div>
         </div>
+        <div class="personalize">
+            <div class="color">
         <div class="font-color">
             <h2>Font Color</h2>
             <label class="font-color-options">
@@ -46,6 +54,8 @@
                     type="radio">
             </label>
         </div>
+        </div>
+            <div class="text">
         <div class="text-align">
             <h2>Text</h2>
             <label class="text-align-options">
@@ -58,13 +68,15 @@
             </label>
         </div>
         <div class="text-style">
-            <h2>Text</h2>
+            <h2>Text Style</h2>
             <label class="text-style-options">
                 <input onclick="textStyle('bold')" class="text-align style-1" name="text-style" type="radio">
                 <input onclick="textStyle('italic')" class="text-align style-2" name="text-style" type="radio">
                 <input onclick="textStyle('underline')" class="text-align style-3" name="text-style" type="radio">
             </label>
         </div>
+        </div>
+        <div class="font-random">
         <div class="font">
             <h2>Font</h2>
          <select class="font-options" id="font-selection" onchange="changeFont(this)">
@@ -78,8 +90,11 @@
             <h2>Random Background</h2>
             <button onclick="randomBG()"class="random-bg-btn"></button>
         </div>
+        </div>
+        <span onclick="closeWindow()"class="closeWindow">x</span>
+        </div>
     </div>
-    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
