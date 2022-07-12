@@ -42,10 +42,11 @@ function textAlign(layout) {
   quoteAuthorFont.style.textAlign = layout;
 }
 
-function textStyle(toggleClass) {
+function textStyle(toggleClass, button) {
   quoteTextFont.classList.toggle(toggleClass);
   quoteAuthorFont.classList.toggle(toggleClass);
 }
+
 function changeFont(font) {
   quoteTextFont.style.fontFamily = font.value;
   quoteAuthorFont.style.fontFamily = font.value;
@@ -59,6 +60,12 @@ function randomBG() {
     quoteBox.style.backgroundImage = `url('${response.url}')`;
     quoteBox.style.backgroundRepeat = "no-repeat";
     quoteBox.style.backgroundSize = "cover";
+    const inputBgColor = document.getElementsByClassName("bgcolor-option");
+    for (let i = 0; i < inputBgColor.length; i++) {
+      if (inputBgColor[i].checked) {
+        inputBgColor[i].checked = false;
+      }
+    }
   });
 }
 const personalizeBox = document.querySelector(".personalize");

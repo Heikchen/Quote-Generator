@@ -113,7 +113,8 @@ select {
 .text-style input:checked {
   outline: 2px solid var(--secondary-grey-color);
 }
-.color-option {
+.color-option,
+.bgcolor-option {
   min-width: 28px;
   min-height: 28px;
 }
