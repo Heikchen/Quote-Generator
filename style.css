@@ -3,8 +3,18 @@
   --primary-white-color: #ffff;
   --primary-blue-color: #a6e1ea;
   --secondary-blue-color: #0d6e79;
+  --primary-black-color: #000;
+  --primary-rosa-color: #fec8d8;
+  --primary-yellow-color: #f3dfad;
+  --secondary-grey-color: #808080;
 }
-
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: var(--secondary-grey-color);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -61,4 +71,29 @@
   color: var(--primary-white-color);
   font-size: 20px;
   cursor: pointer;
+}
+.font-color input {
+  appearance: none;
+  border: 3px solid var(--primary-white-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.font-color input:checked {
+  outline: 2px solid var(--secondary-grey-color);
+}
+.color-option {
+  min-width: 28px;
+  min-height: 28px;
+}
+.fontc-1 {
+  background-color: var(--primary-white-color);
+}
+.fontc-2 {
+  background-color: var(--primary-black-color);
+}
+.fontc-3 {
+  background-color: var(--primary-rosa-color);
+}
+.fontc-4 {
+  background-color: var(--primary-yellow-color);
 }
