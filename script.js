@@ -32,3 +32,7 @@ function changeFontColor(Fontcolor) {
   quoteTextFont.style.color = Fontcolor;
   quoteAuthorFont.style.color = Fontcolor;
 }
+const quoteBox = document.querySelector(".quote-box");
+function changeBackgroundColor(Backcolor) {
+  quoteBox.style.backgroundColor = Backcolor;
+}
