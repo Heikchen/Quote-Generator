@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -42,6 +43,25 @@
                     type="radio">
                 <input onclick="changeBackgroundColor('var(--primary-green-color)')" class="color-option background-4" name="background-color"
                     type="radio">
+            </label>
+        </div>
+        <div class="text-align">
+            <h2>Text</h2>
+            <label class="text-align-options">
+                <input onclick="textAlign('left')" class="text-align text-1"
+                    name="text-align" type="radio">
+                <input onclick="textAlign('center')" class="text-align text-2"
+                    name="text-align" type="radio">
+                <input onclick="textAlign('right')" class="text-align text-3"
+                    name="text-align" type="radio">
+            </label>
+        </div>
+        <div class="text-style">
+            <h2>Text</h2>
+            <label class="text-style-options">
+                <input onclick="textStyle('bold')" class="text-align style-1" name="text-style" type="radio">
+                <input onclick="textStyle('italic')" class="text-align style-2" name="text-style" type="radio">
+                <input onclick="textStyle('underline')" class="text-align style-3" name="text-style" type="radio">
             </label>
         </div>
     </div>

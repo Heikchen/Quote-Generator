@@ -36,3 +36,12 @@ const quoteBox = document.querySelector(".quote-box");
 function changeBackgroundColor(Backcolor) {
   quoteBox.style.backgroundColor = Backcolor;
 }
+function textAlign(layout) {
+  quoteTextFont.style.textAlign = layout;
+  quoteAuthorFont.style.textAlign = layout;
+}
+
+function textStyle(toggleClass) {
+  quoteTextFont.classList.toggle(toggleClass);
+  quoteAuthorFont.classList.toggle(toggleClass);
+}
