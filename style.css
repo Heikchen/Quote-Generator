@@ -65,14 +65,14 @@ select {
 }
 .quote-change-box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 150px;
   border-radius: 32px;
   width: 80%;
   box-shadow: 0px 4px 20px var(--primary-grey-color);
   padding-left: 25px;
-  column-gap: 25%;
+  position: relative;
   flex-wrap: wrap;
   row-gap: 25px;
 }
@@ -244,6 +244,9 @@ select {
   height: 50px;
   width: 50px;
   border: none;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
   border-radius: 50%;
   background-color: var(--secondary-blue-color);
   color: var(--primary-white-color);
