@@ -49,3 +49,12 @@ function changeFont(font) {
   quoteTextFont.style.fontFamily = font.value;
   quoteAuthorFont.style.fontFamily = font.value;
 }
+const numImagesAvailable = 414;
+function randomBG() {
+  let randomImageIndex = Math.floor(Math.random() * numImagesAvailable);
+  fetch(
+    `https://source.unsplash.com/collection/158642/nature/?sig=${randomImageIndex}`
+  ).then((response) => {
+    quoteBox.style.backgroundImage = `url('${response.url}')`;
+  });
+}

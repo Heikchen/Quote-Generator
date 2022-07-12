@@ -185,3 +185,15 @@ select {
   min-width: 100px;
   min-height: 40px;
 }
+.random-bg-btn {
+  min-width: 32px;
+  min-height: 40px;
+  background-image: url(assets/again.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: var(--primary-white-color);
+  border-radius: 8px;
+  border: none;
+}
