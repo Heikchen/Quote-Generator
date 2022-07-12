@@ -57,6 +57,8 @@ function randomBG() {
     `https://source.unsplash.com/collection/158642/nature/?sig=${randomImageIndex}`
   ).then((response) => {
     quoteBox.style.backgroundImage = `url('${response.url}')`;
+    quoteBox.style.backgroundRepeat = "no-repeat";
+    quoteBox.style.backgroundSize = "cover";
   });
 }
 const personalizeBox = document.querySelector(".personalize");
