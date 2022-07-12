@@ -26,3 +26,9 @@ function CreateRandomQuote() {
   AuthorOutput.innerHTML = randomAuthor;
 }
 getApi();
+const quoteTextFont = document.getElementById("quote");
+const quoteAuthorFont = document.getElementById("quote-author");
+function changeFontColor(Fontcolor) {
+  quoteTextFont.style.color = Fontcolor;
+  quoteAuthorFont.style.color = Fontcolor;
+}
