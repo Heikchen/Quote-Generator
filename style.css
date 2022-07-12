@@ -88,6 +88,25 @@ select {
   font-size: 20px;
   cursor: pointer;
 }
+
+.btn-social {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #1dcaff;
+}
+
 .font-color input,
 .background-color input {
   appearance: none;
@@ -268,6 +287,19 @@ select {
   }
   .quote-change-box {
     justify-content: center;
+    flex-wrap: wrap;
     padding: 15px;
+    gap: 25px;
+  }
+  .btn-social {
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .personalize-btn {
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
