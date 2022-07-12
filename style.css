@@ -7,6 +7,8 @@
   --primary-rosa-color: #fec8d8;
   --primary-yellow-color: #f3dfad;
   --secondary-grey-color: #808080;
+  --primary-violet-color: #a2a0ba;
+  --primary-green-color: #92c5ba;
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -72,13 +74,15 @@ h2 {
   font-size: 20px;
   cursor: pointer;
 }
-.font-color input {
+.font-color input,
+.background-color input {
   appearance: none;
   border: 3px solid var(--primary-white-color);
   border-radius: 50%;
   cursor: pointer;
 }
-.font-color input:checked {
+.font-color input:checked,
+.background-color input:checked {
   outline: 2px solid var(--secondary-grey-color);
 }
 .color-option {
@@ -96,4 +100,16 @@ h2 {
 }
 .fontc-4 {
   background-color: var(--primary-yellow-color);
+}
+.background-1 {
+  background-color: var(--primary-blue-color);
+}
+.background-2 {
+  background-color: var(--primary-rosa-color);
+}
+.background-3 {
+  background-color: var(--primary-violet-color);
+}
+.background-4 {
+  background-color: var(--primary-green-color);
 }
