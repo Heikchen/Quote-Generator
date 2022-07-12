@@ -23,6 +23,10 @@ select {
   font-size: 15px;
   text-transform: uppercase;
 }
+.container {
+  position: relative;
+  width: 100%;
+}
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -61,12 +65,16 @@ select {
 }
 .quote-change-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 150px;
   border-radius: 32px;
   width: 80%;
   box-shadow: 0px 4px 20px var(--primary-grey-color);
+  padding-left: 25px;
+  column-gap: 25%;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 #new-quote-btn {
@@ -86,6 +94,11 @@ select {
   border: 3px solid var(--primary-white-color);
   border-radius: 50%;
   cursor: pointer;
+}
+.font-color input,
+.text-align input,
+.font {
+  margin-bottom: 20px;
 }
 .text-align input,
 .text-style input {
@@ -155,18 +168,21 @@ select {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: var(--primary-white-color);
 }
 .style-2 {
   background-image: url(assets/italic.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: var(--primary-white-color);
 }
 .style-3 {
   background-image: url(assets/underline.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: var(--primary-white-color);
 }
 .underline {
   text-decoration: underline;
@@ -196,4 +212,58 @@ select {
   background-color: var(--primary-white-color);
   border-radius: 8px;
   border: none;
+}
+.personalize {
+  display: none;
+  background-color: var(--primary-grey-color);
+  width: 78%;
+  border-radius: 32px;
+  justify-content: space-around;
+  padding: 25px;
+  align-items: center;
+  position: relative;
+  bottom: 425px;
+}
+
+.text {
+  border-right: 1px solid var(--secondary-grey-color);
+  border-left: 1px solid var(--secondary-grey-color);
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.closeWindow {
+  color: var(--primary-white-color);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.personalize-btn {
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--secondary-blue-color);
+  color: var(--primary-white-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .personalize {
+    justify-content: center;
+    width: 70%;
+    gap: 15px;
+    position: relative;
+    bottom: 800px;
+    flex-wrap: wrap;
+  }
+  .text {
+    border: none;
+  }
+  .quote-change-box {
+    justify-content: center;
+    padding: 15px;
+  }
 }
