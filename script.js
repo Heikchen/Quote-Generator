@@ -45,3 +45,7 @@ function textStyle(toggleClass) {
   quoteTextFont.classList.toggle(toggleClass);
   quoteAuthorFont.classList.toggle(toggleClass);
 }
+function changeFont(font) {
+  quoteTextFont.style.fontFamily = font.value;
+  quoteAuthorFont.style.fontFamily = font.value;
+}

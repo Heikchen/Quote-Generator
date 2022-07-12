@@ -17,6 +17,12 @@ h2 {
   font-size: 15px;
   margin-bottom: 10px;
 }
+option,
+select {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -170,4 +176,12 @@ h2 {
 }
 .italic {
   font-style: italic;
+}
+.font-options {
+  background-color: var(--primary-white-color);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 40px;
 }
