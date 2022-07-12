@@ -31,29 +31,24 @@ const quoteAuthorFont = document.getElementById("quote-author");
 function changeFontColor(Fontcolor) {
   quoteTextFont.style.color = Fontcolor;
   quoteAuthorFont.style.color = Fontcolor;
-  closeWindow();
 }
 const quoteBox = document.querySelector(".quote-box");
 function changeBackgroundColor(Backcolor) {
   quoteBox.style.backgroundImage = "url()";
   quoteBox.style.backgroundColor = Backcolor;
-  closeWindow();
 }
 function textAlign(layout) {
   quoteTextFont.style.textAlign = layout;
   quoteAuthorFont.style.textAlign = layout;
-  closeWindow();
 }
 
 function textStyle(toggleClass) {
   quoteTextFont.classList.toggle(toggleClass);
   quoteAuthorFont.classList.toggle(toggleClass);
-  closeWindow();
 }
 function changeFont(font) {
   quoteTextFont.style.fontFamily = font.value;
   quoteAuthorFont.style.fontFamily = font.value;
-  closeWindow();
 }
 const numImagesAvailable = 414;
 function randomBG() {
