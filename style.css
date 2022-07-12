@@ -81,13 +81,26 @@ h2 {
   border-radius: 50%;
   cursor: pointer;
 }
+.text-align input,
+.text-style input {
+  appearance: none;
+  border: 3px solid var(--primary-white-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
 .font-color input:checked,
-.background-color input:checked {
+.background-color input:checked,
+.text-align input:checked,
+.text-style input:checked {
   outline: 2px solid var(--secondary-grey-color);
 }
 .color-option {
   min-width: 28px;
   min-height: 28px;
+}
+.text-align {
+  min-width: 32px;
+  min-height: 40px;
 }
 .fontc-1 {
   background-color: var(--primary-white-color);
@@ -112,4 +125,49 @@ h2 {
 }
 .background-4 {
   background-color: var(--primary-green-color);
+}
+.text-1 {
+  background-image: url(assets/align-left.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-2 {
+  background-image: url(assets/align-center.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-3 {
+  background-image: url(assets/align-right.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.style-1 {
+  background-image: url(assets/bold.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.style-2 {
+  background-image: url(assets/italic.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.style-3 {
+  background-image: url(assets/underline.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
 }
