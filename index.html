@@ -8,21 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <div class="quote-container">
         <div class="quote-box">
             <div class="quote-text">
-                <p id="quote">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"</p>
-                <p id="quote-author">Charles Dickens</p>
+                <p id="quote"></p>
+                <p id="quote-author"></p>
             </div>
         </div>
+
         <footer class="quote-change-box">
-            <div class="quote-social-butn"></div>
-            <button id="new-quote-btn">new quote</button>
+            <div>
+                <button onclick="personalizeQuote()" class="personalize-btn">...</button>
+            </div>
+            <div>
+                <button onclick="getApi()" id="new-quote-btn">new quote</button>
+            </div>
             <div class="btn-social">
             <div>
              <a href ="#"  class ="facebook">
@@ -33,8 +43,75 @@
                 <i class="fa-brands fa-twitter fa-3x "></i> 
              </a>
             </div>
+            </div>
+</footer>
+            
+   
+        <div class="personalize">
+            <div class="color">
+        <div class="font-color">
+            <h2>Font Color</h2>
+            <label class="font-color-options">
+                <input onclick ="changeFontColor('var(--primary-white-color)')"class="color-option fontc-1" name="font-color" type="radio">
+                <input onclick ="changeFontColor('var(--primary-black-color)')" class="color-option fontc-2" name="font-color" type="radio">
+                <input onclick ="changeFontColor('var(--primary-rosa-color)')" class="color-option fontc-3" name="font-color" type="radio">
+                <input onclick ="changeFontColor('var(--primary-yellow-color)')" class="color-option fontc-4" name="font-color" type="radio">
+            </label>
         </div>
-        </footer>
+        <div class="background-color">
+            <h2>Background</h2>
+            <label class="background-color-options">
+                <input onclick="changeBackgroundColor('var(--primary-blue-color)')" class="bgcolor-option background-1" name="background-color"
+                    type="radio">
+                <input onclick="changeBackgroundColor('var(--primary-rosa-color)')" class="bgcolor-option background-2" name="background-color"
+                    type="radio">
+                <input onclick="changeBackgroundColor('var(--primary-violet-color)')" class="bgcolor-option background-3" name="background-color"
+                    type="radio">
+                <input onclick="changeBackgroundColor('var(--primary-green-color)')" class="bgcolor-option background-4" name="background-color"
+                    type="radio">
+            </label>
+        </div>
+        </div>
+            <div class="text">
+        <div class="text-align">
+            <h2>Text</h2>
+            <label class="text-align-options">
+                <input onclick="textAlign('left')" class="text-align text-1"
+                    name="text-align" type="radio">
+                <input onclick="textAlign('center')" class="text-align text-2"
+                    name="text-align" type="radio">
+                <input onclick="textAlign('right')" class="text-align text-3"
+                    name="text-align" type="radio">
+            </label>
+        </div>
+        <div class="text-style">
+            <h2>Text Style</h2>
+            <label class="text-style-options">
+                <input onclick="textStyle('bold','style-1')" class="text-align style-1" name="text-style" type="radio">
+                <input onclick="textStyle('italic','style-2')" class="text-align style-2" name="text-style" type="radio">
+                <input onclick="textStyle('underline','style-3' )" class="text-align style-3" name="text-style" type="radio">
+            </label>
+        </div>
+        </div>
+        <div class="font-random">
+        <div class="font">
+            <h2>Font</h2>
+         <select class="font-options" id="font-selection" onchange="changeFont(this)">
+            <option value="Roboto">Roboto</option>
+            <option value="Lobster Two">Lobster</option>
+            <option value="Poppins">Poppins</option>
+            <option value="Ubuntu">Ubuntu</option>
+         </select>
+        </div>
+        <div class="random-bg">
+            <h2>Random Background</h2>
+            <button onclick="randomBG()"class="random-bg-btn"></button>
+        </div>
+        </div>
+        <span onclick="closeWindow()"class="closeWindow">x</span>
+
+        </div>
+        
     </div>
     
     <script src="script.js"></script>
